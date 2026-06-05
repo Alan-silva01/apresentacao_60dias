@@ -1853,6 +1853,391 @@
       color: var(--steel);
       margin-top: 4px;
     }
+
+    /* ═══════════════════════════════════════════════
+       SLIDES 27-31 — POR QUE CONTINUAR E CRESCER JUNTOS
+       ═══════════════════════════════════════════════ */
+    .future-section-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, rgba(0,189,165,0.12), rgba(43,127,255,0.12));
+      border: 1px solid rgba(0,189,165,0.25);
+      color: var(--teal);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      padding: 6px 18px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    .future-hero-title {
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 0.95;
+      color: #fff;
+      letter-spacing: -2px;
+      margin-bottom: 16px;
+    }
+
+    .future-hero-title .gradient-text {
+      background: linear-gradient(135deg, var(--teal), #5ea2ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .future-subtitle {
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--ash);
+      max-width: 800px;
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+
+    /* Grid Layouts */
+    .slide-layout-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      width: 100%;
+      max-width: 1300px;
+      align-items: center;
+    }
+
+    /* BSUID Slide Elements */
+    .bsuid-visual-wrapper {
+      background: rgba(18,18,22,0.8);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+      position: relative;
+      width: 100%;
+    }
+    .bsuid-visual-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--steel);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .bsuid-db-flow {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      position: relative;
+    }
+    .bsuid-db-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 16px 20px;
+      position: relative;
+    }
+    .bsuid-db-card.active {
+      border-color: rgba(0,189,165,0.3);
+      background: rgba(0,189,165,0.02);
+    }
+    .bsuid-db-field {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 13px;
+    }
+    .bsuid-db-field:last-child {
+      margin-bottom: 0;
+    }
+    .bsuid-db-label {
+      color: var(--steel);
+      font-weight: 500;
+    }
+    .bsuid-db-value {
+      color: #fff;
+      font-weight: 600;
+    }
+    .bsuid-db-value.code {
+      font-family: monospace;
+      background: rgba(0,189,165,0.1);
+      color: var(--teal);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+    .bsuid-mapping-arrow {
+      align-self: center;
+      color: var(--teal);
+      font-size: 20px;
+      margin: -4px 0;
+      animation: pulse-arrow 2s infinite ease-in-out;
+    }
+    @keyframes pulse-arrow {
+      0%, 100% { transform: translateY(0); opacity: 0.6; }
+      50% { transform: translateY(4px); opacity: 1; }
+    }
+
+    /* API Quality Elements */
+    .api-quality-shield {
+      background: rgba(0,189,165,0.03);
+      border: 1px solid rgba(0,189,165,0.15);
+      border-radius: 16px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0,189,165,0.05);
+      width: 100%;
+    }
+    .api-shield-icon {
+      font-size: 64px;
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+    .api-status-title {
+      font-size: 22px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+    .api-status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(0,212,182,0.12);
+      color: #00d4b6;
+      border: 1px solid rgba(0,212,182,0.25);
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+    .api-status-dot-pulse {
+      width: 8px;
+      height: 8px;
+      background-color: #00d4b6;
+      border-radius: 50%;
+      position: relative;
+    }
+    .api-status-dot-pulse::after {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      border: 2px solid #00d4b6;
+      animation: pulse-ring 2s ease-out infinite;
+    }
+    .api-shield-sub {
+      font-size: 13px;
+      color: var(--steel);
+    }
+
+    /* Services Grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      width: 100%;
+      max-width: 1300px;
+    }
+    .service-card {
+      background: rgba(18,18,22,0.7);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 22px;
+      text-align: left;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .service-card:hover {
+      border-color: rgba(0,189,165,0.25);
+      background: rgba(0,189,165,0.02);
+      transform: translateY(-2px);
+    }
+    .service-icon {
+      font-size: 24px;
+      margin-bottom: 12px;
+      display: block;
+    }
+    .service-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .service-desc {
+      font-size: 12px;
+      line-height: 1.5;
+      color: #9aa5b4;
+    }
+
+    /* Investment Cards */
+    .investment-wrap {
+      display: flex;
+      gap: 24px;
+      width: 100%;
+      max-width: 1200px;
+      justify-content: center;
+      align-items: stretch;
+    }
+    .investment-card {
+      background: rgba(18,18,22,0.8);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 16px;
+      padding: 36px 30px;
+      width: 380px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    .investment-card.featured {
+      border-color: var(--teal);
+      background: linear-gradient(180deg, rgba(0,189,165,0.03) 0%, rgba(18,18,22,0.8) 100%);
+      box-shadow: 0 10px 40px rgba(0,189,165,0.08);
+    }
+    .investment-card.featured::before {
+      content: 'RECOMENDADO';
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--teal);
+      color: #000;
+      font-size: 9px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      padding: 4px 14px;
+      border-radius: 12px;
+    }
+    .investment-badge {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: var(--steel);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .investment-card.featured .investment-badge {
+      color: var(--teal);
+    }
+    .investment-price {
+      font-size: 44px;
+      font-weight: 900;
+      color: #fff;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .investment-price span {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--steel);
+    }
+    .investment-subtitle {
+      font-size: 12px;
+      color: var(--ash);
+      margin-bottom: 28px;
+      line-height: 1.4;
+    }
+    .investment-divider {
+      height: 1px;
+      background: rgba(255,255,255,0.06);
+      margin: 24px 0;
+    }
+    .investment-features {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      text-align: left;
+      flex-grow: 1;
+    }
+    .investment-features li {
+      font-size: 13px;
+      color: #9aa5b4;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .investment-features li strong {
+      color: #fff;
+    }
+    .investment-features li::before {
+      content: '✓';
+      color: var(--teal);
+      font-weight: bold;
+    }
+
+    .investment-setup-card {
+      background: rgba(255,255,255,0.02);
+      border: 1px dashed rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 30px;
+      width: 320px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .setup-badge {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #5ea2ff;
+      border: 1px solid rgba(94,162,255,0.25);
+      background: rgba(94,162,255,0.08);
+      padding: 3px 10px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+    }
+    .setup-price {
+      font-size: 36px;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .setup-price-sub {
+      font-size: 12px;
+      color: var(--steel);
+      margin-bottom: 20px;
+    }
+    .setup-desc {
+      font-size: 12px;
+      line-height: 1.5;
+      color: var(--ash);
+    }
+
+    .closing-quote {
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 1.6;
+      color: var(--ash);
+      max-width: 850px;
+      text-align: center;
+      font-style: italic;
+      margin: 28px 0;
+    }
+    .closing-quote strong {
+      color: #fff;
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    @keyframes pulse-ring {
+      0% { transform: scale(1); opacity: 1; }
+      100% { transform: scale(1.8); opacity: 0; }
+    }
   </style>
 </head>
 
@@ -4401,6 +4786,327 @@
             <div
               style="text-align:center; margin-top:4px; font-size:11px; color:var(--steel); letter-spacing:1px; text-transform:uppercase;">
               Dados reais de 358 interações &middot; Plataforma Maia &middot; Abril–Maio/2026</div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════════
+         SLIDE 27 — ARQUITETURA RESILIENTE & META BSUID
+      ════════════════════════════════════ -->
+      <section class="slide">
+        <div class="solid-bg"></div>
+        <div class="slide-content"
+          style="max-width:1440px; flex-direction:column; align-items:center; padding:0 70px; justify-content:center;">
+
+          <div class="future-section-badge">Adequação Técnica Meta 2026</div>
+
+          <h2 class="future-hero-title" style="text-align:center;">
+            Arquitetura Resiliente: <span class="gradient-text">WhatsApp BSUID &amp; Usernames</span>
+          </h2>
+
+          <div class="slide-layout-cols" style="margin-top: 10px;">
+            <!-- Left Side: Visual BSUID database card mapping -->
+            <div class="bsuid-visual-wrapper">
+              <div class="bsuid-visual-title">
+                <span>🗄️</span> Modelo de Dados do CRM (Adequação BSUID)
+              </div>
+              <div class="bsuid-db-flow">
+                <!-- User Record Card -->
+                <div class="bsuid-db-card">
+                  <div class="bsuid-db-field">
+                    <span class="bsuid-db-label">Mapeamento Legado:</span>
+                    <span class="bsuid-db-value" style="color:#ff6b6b; font-weight:700;">Chave Primária: wa_id (Telefone) ⚠️</span>
+                  </div>
+                  <div class="bsuid-db-field">
+                    <span class="bsuid-db-label">Risco:</span>
+                    <span class="bsuid-db-value" style="color:var(--ash);">Quebra de automações se o usuário ocultar o número</span>
+                  </div>
+                </div>
+
+                <!-- Mapping Arrow -->
+                <div class="bsuid-mapping-arrow">▼ Migração de Chave Primária no Banco de Dados</div>
+
+                <!-- BSUID Mapped Card -->
+                <div class="bsuid-db-card active">
+                  <div class="bsuid-db-field">
+                    <span class="bsuid-db-label">Novo Identificador (Chave):</span>
+                    <span class="bsuid-db-value code" style="font-size:13px; font-weight:700;">BSUID: BR.69JN438N38U34NM3HR8</span>
+                  </div>
+                  <div class="bsuid-db-field">
+                    <span class="bsuid-db-label">Vínculos/Atributos:</span>
+                    <span class="bsuid-db-value" style="color:#00d4b6; font-weight:700;">Telefone Opcional + Histórico + EVO ID 🟢</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Side: Explanation of BSUID and updates -->
+            <div style="text-align: left; display: flex; flex-direction: column; gap: 14px;">
+              <h3 style="font-size: 19px; font-weight: 700; color: #fff;">O que muda com os WhatsApp Usernames?</h3>
+              <p style="font-size: 13px; color: var(--ash); line-height: 1.6; margin-bottom: 2px;">
+                A Meta está lançando a funcionalidade de <strong>nomes de usuário comerciais (@username)</strong>. Os usuários poderão interagir e agendar aulas sem a obrigação de compartilhar seu número de telefone.
+              </p>
+              <ul class="bullet-list" style="font-size: 12.5px; gap: 8px;">
+                <li>
+                  <strong>Business-Scoped User ID (BSUID):</strong> 
+                  A Meta está substituindo o número de telefone pelo BSUID como identificador único e exclusivo de cada relação usuário-empresa nos webhooks de mensagens.
+                </li>
+                <li>
+                  <strong>Adequação de Webhooks &amp; APIs:</strong> 
+                  Já atualizamos os parsers das nossas integrações para processar o novo parâmetro <code style="color:var(--teal);">user_id</code> nas mensagens recebidas e eventos de status.
+                </li>
+                <li>
+                  <strong>Mapeamento Dinâmico (Contact Book):</strong> 
+                  Consumimos a base de mapeamento de-para da Meta para agrupar automaticamente o BSUID ao cadastro preexistente no EVO e na nossa Dashboard.
+                </li>
+                <li>
+                  <strong>Resiliência da IA:</strong> 
+                  Mesmo que o cliente oculte o número de telefone posteriormente, o robô continua acessando o histórico completo de conversas daquele BSUID.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════════
+         SLIDE 28 — DIFERENCIAIS DA API OFICIAL
+      ════════════════════════════════════ -->
+      <section class="slide">
+        <div class="solid-bg"></div>
+        <div class="slide-content"
+          style="max-width:1440px; flex-direction:column; align-items:center; padding:0 70px; justify-content:center;">
+
+          <div class="future-section-badge">Nosso Grande Diferencial</div>
+
+          <h2 class="future-hero-title" style="text-align:center;">
+            Qualidade da <span class="gradient-text">API Oficial da Meta</span>
+          </h2>
+
+          <div class="slide-layout-cols" style="margin-top: 15px; grid-template-columns: 460px 1fr; gap: 50px;">
+            <!-- Left Side: Large Status Shield -->
+            <div class="api-quality-shield">
+              <div class="api-shield-icon">🛡️</div>
+              <div class="api-status-title">Meta Business Suite API</div>
+              <div class="api-status-badge">
+                <span class="api-status-dot-pulse"></span> Qualidade: Alta (Verde)
+              </div>
+              <p style="font-size: 13.5px; color: #9aa5b4; line-height: 1.6; margin-bottom: 0;">
+                Foco total em manter a conta saudável com <strong>taxas de conversão elevadas</strong> e <strong>baixo índice de bloqueios</strong>.
+              </p>
+            </div>
+
+            <!-- Right Side: How we guarantee this -->
+            <div style="text-align: left; display: flex; flex-direction: column; gap: 18px;">
+              <h3 style="font-size: 20px; font-weight: 700; color: #fff;">Como Mantemos a Qualidade e Reduzimos Custos:</h3>
+              
+              <ul class="bullet-list" style="font-size: 14px; gap: 12px;">
+                <li>
+                  <strong>Validação em Tempo Real com EVO:</strong> 
+                  Antes de disparar cobranças de saldo devedor, o sistema realiza uma busca via API direta no EVO para verificar se a inadimplência persiste. Evita cobranças indevidas e frustração do cliente.
+                </li>
+                <li>
+                  <strong>Tratamento Ativo de Duplicidades:</strong> 
+                  Varredura inteligente que impede múltiplos disparos para o mesmo número em cadastros redundantes (Ex: mesma pessoa como oportunidade e cliente ativo). Disparo apenas no registro mais atual.
+                </li>
+                <li>
+                  <strong>Análise Dinâmica de Reincidência:</strong> 
+                  Monitoramos contatos que não respondem a disparos anteriores para pausar novos envios automáticos temporariamente. Protege o número e reduz custos desnecessários.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════════
+         SLIDE 29 — SERVIÇOS E ACOMPANHAMENTO
+      ════════════════════════════════════ -->
+      <section class="slide">
+        <div class="solid-bg"></div>
+        <div class="slide-content"
+          style="max-width:1440px; flex-direction:column; align-items:center; padding:0 70px; justify-content:center;">
+
+          <div class="future-section-badge">Muito Além de uma Ferramenta</div>
+
+          <h2 class="future-hero-title" style="text-align:center;">
+            Serviços <span class="gradient-text">&amp; Acompanhamento</span>
+          </h2>
+
+          <p class="future-subtitle" style="text-align:center; font-size: 14px; margin-bottom: 24px;">
+            Diferente das ferramentas comuns de prateleira, oferecemos suporte operacional completo para assegurar que a Fluir extraia o máximo da IA.
+          </p>
+
+          <div class="services-grid">
+            <div class="service-card">
+              <span class="service-icon">🎓</span>
+              <h4 class="service-title">Treinamento da Equipe</h4>
+              <p class="service-desc">Capacitação completa para os times das unidades operarem a dashboard e gerenciarem o atendimento da IA.</p>
+            </div>
+
+            <div class="service-card">
+              <span class="service-icon">🤝</span>
+              <h4 class="service-title">Acompanhamento Contínuo</h4>
+              <p class="service-desc">Monitoramento diário da saúde do assistente virtual e análise da qualidade das interações.</p>
+            </div>
+
+            <div class="service-card">
+              <span class="service-icon">⚙️</span>
+              <h4 class="service-title">Melhorias Contínuas</h4>
+              <p class="service-desc">Atualizações de sistema e adaptação da lógica de atendimento conforme a operação evolui.</p>
+            </div>
+
+            <div class="service-card">
+              <span class="service-icon">✍️</span>
+              <h4 class="service-title">Ajustes de Prompts</h4>
+              <p class="service-desc">Otimização contínua do tom de voz, regras de negócio e comportamento das respostas do agente de IA.</p>
+            </div>
+
+            <div class="service-card">
+              <span class="service-icon">📈</span>
+              <h4 class="service-title">Métricas de Conversão</h4>
+              <p class="service-desc">Análise profunda da taxa de conversão dos agendamentos, conversões de aulas e ROI do projeto.</p>
+            </div>
+
+            <div class="service-card">
+              <span class="service-icon">🚀</span>
+              <h4 class="service-title">Métricas de Disparos</h4>
+              <p class="service-desc">Relatório mensal detalhado do desempenho de cada régua de automação (abertura, resposta e reincidência).</p>
+            </div>
+
+            <div class="service-card">
+              <span class="service-icon">📊</span>
+              <h4 class="service-title">Relatório das Automações</h4>
+              <p class="service-desc">Mensuração mensal dos custos de disparos economizados e volume de mensagens enviadas.</p>
+            </div>
+
+            <div class="service-card">
+              <span class="service-icon">🗓️</span>
+              <h4 class="service-title">Relatório de Métricas</h4>
+              <p class="service-desc">Compilado executivo com os principais indicadores de crescimento e saúde da API oficial.</p>
+            </div>
+
+            <div class="service-card">
+              <span class="service-icon">👥</span>
+              <h4 class="service-title">Acompanhamento em Grupo</h4>
+              <p class="service-desc">Sessões coletivas de mentoria e alinhamento com as equipes operacionais de todas as unidades.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════════
+         SLIDE 30 — PROPOSTA DE INVESTIMENTO
+      ════════════════════════════════════ -->
+      <section class="slide">
+        <div class="solid-bg"></div>
+        <div class="slide-content"
+          style="max-width:1440px; flex-direction:column; align-items:center; padding:0 70px; justify-content:center;">
+
+          <div class="future-section-badge">Estrutura Comercial</div>
+
+          <h2 class="future-hero-title" style="text-align:center;">
+            Proposta de <span class="gradient-text">Investimento</span>
+          </h2>
+
+          <p class="future-subtitle" style="text-align:center; font-size: 16px; margin-bottom: 24px;">
+            Planejamento dimensionado para a expansão completa das <strong>15 unidades de academia</strong>.
+          </p>
+
+          <div class="investment-wrap">
+            <!-- Left Card: Setup Fee -->
+            <div class="investment-setup-card">
+              <span class="setup-badge">ETAPA ÚNICA</span>
+              <div class="setup-price">R$ 2.500</div>
+              <div class="setup-price-sub">por unidade</div>
+              <div style="width: 40px; height: 1px; background: rgba(255,255,255,0.1); margin-bottom: 16px;"></div>
+              <h4 style="font-size: 13px; font-weight: 700; color: #fff; margin-bottom: 8px; text-transform: uppercase;">Implementação &amp; Setup</h4>
+              <p class="setup-desc">Homologação da API Oficial da Meta, integração com sistema EVO, treinamento da equipe e customização dos prompts de IA por unidade.</p>
+            </div>
+
+            <!-- Middle Card: Plano 850 -->
+            <div class="investment-card">
+              <div class="investment-badge">PLANO BASIC</div>
+              <div class="investment-price">R$ 850 <span>/ mês</span></div>
+              <div class="investment-subtitle">Por unidade ativa no sistema</div>
+              <div class="investment-divider"></div>
+              <ul class="investment-features">
+                <li>Acesso completo à <strong>IA Assistente</strong></li>
+                <li>Dashboard e relatórios mensais</li>
+                <li>Suporte e melhorias contínuas</li>
+                <li><strong>Tokens OpenAI:</strong> por conta da empresa</li>
+              </ul>
+            </div>
+
+            <!-- Right Card: Plano 1000 (Featured) -->
+            <div class="investment-card featured">
+              <div class="investment-badge">PLANO PRO</div>
+              <div class="investment-price">R$ 1.000 <span>/ mês</span></div>
+              <div class="investment-subtitle">Por unidade ativa no sistema</div>
+              <div class="investment-divider"></div>
+              <ul class="investment-features">
+                <li>Acesso completo à <strong>IA Assistente</strong></li>
+                <li>Dashboard e relatórios mensais</li>
+                <li>Suporte e melhorias contínuas</li>
+                <li><strong>Tokens OpenAI:</strong> inclusos por nossa conta</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════════
+         SLIDE 31 — FECHAMENTO & PARCERIA
+      ════════════════════════════════════ -->
+      <section class="slide">
+        <div class="solid-bg"></div>
+        <div class="slide-content"
+          style="max-width:1440px; flex-direction:column; align-items:center; padding:0 70px; justify-content:center;">
+
+          <div class="future-section-badge">Visão de Futuro</div>
+
+          <h2 class="future-hero-title" style="text-align:center; font-size:60px; line-height: 1.05;">
+            O Parceiro Estratégico para <br><span class="gradient-text">o Crescimento da Fluir</span>
+          </h2>
+
+          <p class="closing-quote">
+            "Não oferecemos apenas uma ferramenta de envio. Garantimos a <strong>qualidade do seu número oficial</strong>, nos antecipamos às <strong>mudanças de infraestrutura da Meta</strong>, capacitamos o seu time e evoluímos a inteligência artificial com dados reais de sua rede."
+          </p>
+
+          <div class="future-grid" style="grid-template-columns: repeat(3, 1fr); max-width: 900px; margin: 10px 0 20px 0; text-align: center; gap: 30px; display: grid;">
+            <div style="background: rgba(255,255,255,0.02); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.04);">
+              <div style="font-size: 32px; margin-bottom: 6px;">📈</div>
+              <div style="font-size: 24px; font-weight: 800; color: #fff;">Escalabilidade</div>
+              <div style="font-size: 12px; color: var(--steel); margin-top: 4px;">Pronto para as 15 unidades</div>
+            </div>
+
+            <div style="background: rgba(255,255,255,0.02); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.04);">
+              <div style="font-size: 32px; margin-bottom: 6px;">🛡️</div>
+              <div style="font-size: 24px; font-weight: 800; color: var(--teal);">Segurança</div>
+              <div style="font-size: 12px; color: var(--steel); margin-top: 4px;">API Oficial 100% protegida</div>
+            </div>
+
+            <div style="background: rgba(255,255,255,0.02); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.04);">
+              <div style="font-size: 32px; margin-bottom: 6px;">🔮</div>
+              <div style="font-size: 24px; font-weight: 800; color: #5ea2ff;">Futuro</div>
+              <div style="font-size: 12px; color: var(--steel); margin-top: 4px;">Prontos para BSUID e updates</div>
+            </div>
+          </div>
+
+          <div style="width:48px; height:1px; background:rgba(255,255,255,0.1); margin-bottom:14px;"></div>
+
+          <p style="font-size:14px; color:var(--ash); text-align:center; max-width:600px; line-height:1.7;">
+            Resultados validados. Qualidade blindada. Próximos passos planejados.<br>
+            <strong style="color:#fff; font-size:16px;">A Fluir está pronta para o próximo nível.</strong>
+          </p>
+
+          <div style="text-align:center; margin-top:16px; font-size:10px; color:var(--steel); letter-spacing:1px; text-transform:uppercase;">
+            Plataforma Maia · Apresentação 60 Dias · Junho/2026
           </div>
 
         </div>
