@@ -1921,17 +1921,19 @@
       cursor: zoom-in;
       transition: box-shadow 0.3s ease, filter 0.3s ease;
     }
+
     .bsuid-img-hover:hover {
-      box-shadow: 0 8px 40px rgba(0,212,182,0.25);
+      box-shadow: 0 8px 40px rgba(0, 212, 182, 0.25);
       filter: brightness(1.05);
     }
+
     /* Lightbox overlay */
     .bsuid-lightbox {
       display: none;
       position: fixed;
       inset: 0;
       z-index: 99999;
-      background: rgba(0,0,0,0.85);
+      background: rgba(0, 0, 0, 0.85);
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
       align-items: center;
@@ -1939,17 +1941,27 @@
       cursor: zoom-out;
       animation: lbFadeIn 0.3s ease;
     }
-    .bsuid-lightbox.active { display: flex; }
+
+    .bsuid-lightbox.active {
+      display: flex;
+    }
+
     .bsuid-lightbox img {
       max-width: 82vw;
       max-height: 82vh;
       border-radius: 16px;
-      box-shadow: 0 32px 100px rgba(0,212,182,0.25), 0 8px 40px rgba(0,0,0,0.6);
+      box-shadow: 0 32px 100px rgba(0, 212, 182, 0.25), 0 8px 40px rgba(0, 0, 0, 0.6);
       object-fit: contain;
     }
+
     @keyframes lbFadeIn {
-      from { opacity: 0; }
-      to   { opacity: 1; }
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
     }
 
     /* Expandable panel */
@@ -2907,7 +2919,8 @@
               </div>
 
               <!-- Row 7: Fora do Horário Comercial -->
-              <div class="table-row" style="border-top: 1px dashed rgba(0, 212, 182, 0.2); background: rgba(0, 212, 182, 0.01);">
+              <div class="table-row"
+                style="border-top: 1px dashed rgba(0, 212, 182, 0.2); background: rgba(0, 212, 182, 0.01);">
                 <div class="col-metric" style="color: var(--teal); font-weight: 600;">Fora do horário comercial</div>
                 <div class="col-value" style="color: var(--teal); font-weight: 700;">70 (35.9%)</div>
                 <div class="col-context">Finais de semana, noites e feriados</div>
@@ -2916,7 +2929,10 @@
 
             <!-- Bottom Highlight Banner -->
             <div class="summary-note-box">
-              O volume cresceu <strong>19,6%</strong> em relação a abril. A IA respondeu em <strong>35 segundos</strong> em média — frente a <strong>45–90 min</strong> da equipe humana — com <strong>35,9% dos atendimentos (70 leads) ocorrendo fora do horário comercial</strong> (finais de semana, noites, madrugadas e feriados), sem qualquer custo adicional de pessoal.
+              O volume cresceu <strong>19,6%</strong> em relação a abril. A IA respondeu em <strong>35 segundos</strong>
+              em média — frente a <strong>45–90 min</strong> da equipe humana — com <strong>35,9% dos atendimentos (70
+                leads) ocorrendo fora do horário comercial</strong> (finais de semana, noites, madrugadas e feriados),
+              sem qualquer custo adicional de pessoal.
             </div>
           </div>
         </div>
@@ -4984,32 +5000,46 @@
           <h2 class="section-title" style="margin-bottom:8px; font-size:42px;">Mudanças no WhatsApp</h2>
           <div style="width:48px; height:2px; background:var(--teal); margin-bottom:28px;"></div>
 
-          <div style="display:grid; grid-template-columns:1fr 480px; gap:36px; width:100%; max-width:1300px; align-items:start;">
+          <div
+            style="display:grid; grid-template-columns:1fr 480px; gap:36px; width:100%; max-width:1300px; align-items:start;">
 
             <!-- LEFT COLUMN: Explanation cards -->
             <div style="display:flex; flex-direction:column; gap:20px; text-align:left;">
 
               <!-- Card 1: O que muda -->
-              <div class="wa-column-card" style="padding:22px; border-left:3px solid var(--teal); background:rgba(0,189,165,0.02); height:auto;">
+              <div class="wa-column-card"
+                style="padding:22px; border-left:3px solid var(--teal); background:rgba(0,189,165,0.02); height:auto;">
                 <h3 style="font-size:16px; font-weight:700; color:#fff; margin-bottom:6px;">O que está mudando</h3>
                 <p style="font-size:13px; line-height:1.65; color:#b0bac8; margin:0;">
-                  A Meta já está implementando <strong>nomes de usuário no WhatsApp</strong> — em junho de 2026 já está ativo em alguns países e chega ao Brasil gradualmente ao longo do ano. Cada usuário passará a ter um <strong>ID único (BSUID)</strong> como identificador nas empresas, substituindo gradualmente o número de telefone. Quem decidir ocultar o telefone <strong>só poderá receber mensagens via BSUID</strong>.
+                  A Meta já está implementando <strong>nomes de usuário no WhatsApp</strong> — em junho de 2026 já está
+                  ativo em alguns países e chega ao Brasil gradualmente ao longo do ano. Cada usuário passará a ter um
+                  <strong>ID único (BSUID)</strong> como identificador nas empresas, substituindo gradualmente o número
+                  de telefone. Quem decidir ocultar o telefone <strong>só poderá receber mensagens via BSUID</strong>.
                 </p>
               </div>
 
               <!-- Card 2: Impacto -->
-              <div class="wa-column-card" style="padding:22px; border-left:3px solid #ff6b6b; background:rgba(255,80,80,0.02); height:auto;">
+              <div class="wa-column-card"
+                style="padding:22px; border-left:3px solid #ff6b6b; background:rgba(255,80,80,0.02); height:auto;">
                 <h3 style="font-size:16px; font-weight:700; color:#fff; margin-bottom:6px;">Impacto nas automações</h3>
                 <p style="font-size:13px; line-height:1.65; color:#b0bac8; margin:0;">
-                  Nesta fase inicial, é crucial <strong>mapear o BSUID e atrelá-lo diretamente ao cadastro do cliente</strong> para garantir a continuidade dos disparos e conversas automatizadas quando a transição for 100% concluída. Cada ID é único entre cliente e empresa: <strong>se a empresa trocar o número de disparo</strong> (ou perder acesso), perde o vínculo com todos os contatos que já interagiram, exigindo cuidado redobrado.
+                  Nesta fase inicial, é crucial <strong>mapear o BSUID e atrelá-lo diretamente ao cadastro do
+                    cliente</strong> para garantir a continuidade dos disparos e conversas automatizadas quando a
+                  transição for 100% concluída. Cada ID é único entre cliente e empresa: <strong>se a empresa trocar o
+                    número de disparo</strong> (ou perder acesso), perde o vínculo com todos os contatos que já
+                  interagiram, exigindo cuidado redobrado.
                 </p>
               </div>
 
               <!-- Card 3: Antecipação -->
-              <div class="wa-column-card" style="padding:22px; border-left:3px solid var(--blue); background:rgba(43,127,255,0.02); height:auto;">
-                <h3 style="font-size:16px; font-weight:700; color:#fff; margin-bottom:6px;">Como estamos nos antecipando</h3>
+              <div class="wa-column-card"
+                style="padding:22px; border-left:3px solid var(--blue); background:rgba(43,127,255,0.02); height:auto;">
+                <h3 style="font-size:16px; font-weight:700; color:#fff; margin-bottom:6px;">Como estamos nos antecipando
+                </h3>
                 <p style="font-size:13px; line-height:1.65; color:#b0bac8; margin:0;">
-                  Estamos nos antecipando analisando a estrutura de chegada desses IDs para <strong>mapear e associá-los aos cadastros dos clientes</strong>. Dessa forma, nossa arquitetura estará pronta para usar o ID ou o telefone em qualquer situação, garantindo flexibilidade total nas automações.
+                  Estamos nos antecipando analisando a estrutura de chegada desses IDs para <strong>mapear e associá-los
+                    aos cadastros dos clientes</strong>. Dessa forma, nossa arquitetura estará pronta para usar o ID ou
+                  o telefone em qualquer situação, garantindo flexibilidade total nas automações.
                 </p>
               </div>
 
@@ -5021,29 +5051,34 @@
               <!-- Image -->
               <div class="wa-column-card" style="padding:12px; border-color:rgba(0,212,182,0.15); height:auto;">
                 <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-                  <span style="font-size:11px; font-weight:700; text-transform:uppercase; color:var(--teal); letter-spacing:1px;">Como funciona o BSUID</span>
+                  <span
+                    style="font-size:11px; font-weight:700; text-transform:uppercase; color:var(--teal); letter-spacing:1px;">Como
+                    funciona o BSUID</span>
                   <span class="wa-pill green" style="padding:3px 8px; font-size:10px;">Junho 2026</span>
                 </div>
-                <div style="background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.06); border-radius:8px; padding:6px; overflow:hidden;">
+                <div
+                  style="background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.06); border-radius:8px; padding:6px; overflow:hidden;">
                   <img
                     src="https://res.cloudinary.com/ddhlqymvf/image/upload/v1780689560/ChatGPT_Imagem_Jun_5_2026_3_awfh7l.png"
-                    alt="WhatsApp BSUID" class="bsuid-img-hover"
-                    style="width:100%; display:block; border-radius:4px;"
-                    onclick="openBsuidLightbox(this.src)"
-                  />
+                    alt="WhatsApp BSUID" class="bsuid-img-hover" style="width:100%; display:block; border-radius:4px;"
+                    onclick="openBsuidLightbox(this.src)" />
                 </div>
               </div>
 
               <!-- BSUID Example Card -->
               <div class="wa-column-card" style="padding:16px; border-color:rgba(0,212,182,0.15); height:auto;">
-                <div style="font-size:11px; font-weight:700; text-transform:uppercase; color:var(--teal); letter-spacing:1px; margin-bottom:10px;">Exemplo — Mapeamento BSUID</div>
+                <div
+                  style="font-size:11px; font-weight:700; text-transform:uppercase; color:var(--teal); letter-spacing:1px; margin-bottom:10px;">
+                  Exemplo — Mapeamento BSUID</div>
                 <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:8px;">
                   <span style="font-size:13px; color:#b0bac8;">Ana Souza · (11) 99999-0000</span>
                   <span style="color:var(--steel); font-size:16px;">→</span>
-                  <span style="font-family:monospace; font-size:12.5px; font-weight:700; background:rgba(0,212,182,0.12); color:var(--teal); padding:4px 12px; border-radius:6px; border:1px solid rgba(0,212,182,0.3);">BR.69JN438N38U34NM3HR8</span>
+                  <span
+                    style="font-family:monospace; font-size:12.5px; font-weight:700; background:rgba(0,212,182,0.12); color:var(--teal); padding:4px 12px; border-radius:6px; border:1px solid rgba(0,212,182,0.3);">BR.69JN438N38U34NM3HR8</span>
                 </div>
                 <div style="font-size:12px; color:var(--steel); line-height:1.5;">
-                  Este ID é <strong style="color:#fff;">único por empresa</strong> — o mesmo usuário terá BSUIDs diferentes para cada negócio.
+                  Este ID é <strong style="color:#fff;">único por empresa</strong> — o mesmo usuário terá BSUIDs
+                  diferentes para cada negócio.
                 </div>
               </div>
 
@@ -5053,7 +5088,10 @@
 
           <!-- Bottom note box + buttons -->
           <div class="perf-note-box" style="width:100%; max-width:1300px; text-align:left; margin-top:20px;">
-            <strong>Ponto de atenção:</strong> A conversa por telefone só será possível se o cliente já tiver conversado recentemente com seu contato empresarial. Se o usuário optar por usar o username (ocultando o telefone), você só conseguirá conversar com ele por esse ID. Ou seja, ele precisa ser mapeado e atrelado ao cadastro do cliente para entender o contexto e também para enviar a mensagem.
+            <strong>Ponto de atenção:</strong> A conversa por telefone só será possível se o cliente já tiver conversado
+            recentemente com seu contato empresarial. Se o usuário optar por usar o username (ocultando o telefone),
+            você só conseguirá conversar com ele por esse ID. Ou seja, ele precisa ser mapeado e atrelado ao cadastro do
+            cliente para entender o contexto e também para enviar a mensagem.
           </div>
 
           <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-top:14px;">
@@ -5082,25 +5120,32 @@
             Novidades na Solução: <span class="gradient-text">Coexistência no WhatsApp</span>
           </h2>
 
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:40px; width:100%; max-width:1300px; align-items:start;">
+          <div
+            style="display:grid; grid-template-columns:1fr 1fr; gap:40px; width:100%; max-width:1300px; align-items:start;">
             <!-- Left Side: Main Concept -->
             <div style="display:flex; flex-direction:column; gap:20px; text-align:left;">
-              
-              <div class="wa-column-card" style="padding:26px; border-left:3px solid var(--teal); background:rgba(0,189,165,0.02); height:auto;">
+
+              <div class="wa-column-card"
+                style="padding:26px; border-left:3px solid var(--teal); background:rgba(0,189,165,0.02); height:auto;">
                 <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
                   <span style="font-size:24px;">📱</span>
                   <h3 style="font-size:18px; font-weight:700; color:#fff; margin:0;">App e API no mesmo número</h3>
                 </div>
                 <p style="font-size:13.5px; line-height:1.7; color:#b0bac8; margin:0;">
-                  Antes você tinha que abandonar o aplicativo móvel para usar a API oficial. Com a <strong>Coexistência</strong>, o celular continua funcionando normalmente — você responde, faz ligações e acessa o histórico — enquanto a automação roda em paralelo via API Oficial da Meta.
+                  Antes você tinha que abandonar o aplicativo móvel para usar a API oficial. Com a
+                  <strong>Coexistência</strong>, o celular continua funcionando normalmente — você responde, faz
+                  ligações e acessa o histórico — enquanto a automação roda em paralelo via API Oficial da Meta.
                 </p>
               </div>
 
               <!-- Note Card -->
-              <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:18px; display:flex; gap:12px; align-items:flex-start;">
+              <div
+                style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:18px; display:flex; gap:12px; align-items:flex-start;">
                 <span style="font-size:18px; flex-shrink:0;">⚠️</span>
                 <div style="font-size:12.5px; color:#9aa5b4; line-height:1.5;">
-                  <strong style="color:#fff;">Observação importante:</strong> O WhatsApp mantém o limite padrão de <strong>até 5 aparelhos conectados</strong> simultaneamente ao mesmo número (1 celular físico + 4 aparelhos via WhatsApp Web/Desktop).
+                  <strong style="color:#fff;">Observação importante:</strong> O WhatsApp mantém o limite padrão de
+                  <strong>até 5 aparelhos conectados</strong> simultaneamente ao mesmo número (1 celular físico + 4
+                  aparelhos via WhatsApp Web/Desktop).
                 </div>
               </div>
 
@@ -5108,36 +5153,47 @@
 
             <!-- Right Side: Rules defined by Meta -->
             <div style="display:flex; flex-direction:column; gap:20px; text-align:left;">
-              
-              <div class="wa-column-card" style="padding:26px; border-left:3px solid var(--blue); background:rgba(43,127,255,0.02); height:auto;">
+
+              <div class="wa-column-card"
+                style="padding:26px; border-left:3px solid var(--blue); background:rgba(43,127,255,0.02); height:auto;">
                 <div style="display:flex; align-items:center; gap:12px; margin-bottom:14px;">
                   <span style="font-size:24px;">📋</span>
-                  <h3 style="font-size:18px; font-weight:700; color:#fff; margin:0;">Regras de Uso definidas pela Meta</h3>
+                  <h3 style="font-size:18px; font-weight:700; color:#fff; margin:0;">Regras de Uso definidas pela Meta
+                  </h3>
                 </div>
-                
+
                 <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:14px;">
-                  <li style="display:flex; gap:10px; align-items:flex-start; font-size:13.5px; line-height:1.5; color:#b0bac8;">
+                  <li
+                    style="display:flex; gap:10px; align-items:flex-start; font-size:13.5px; line-height:1.5; color:#b0bac8;">
                     <span style="color:var(--teal); font-weight:bold; font-size:14px;">•</span>
                     <div>
-                      <strong style="color:#fff;">Listas de Transmissão:</strong> Disponíveis apenas através da API (são bloqueadas no aplicativo do celular ao habilitar a coexistência).
+                      <strong style="color:#fff;">Listas de Transmissão:</strong> Disponíveis apenas através da API (são
+                      bloqueadas no aplicativo do celular ao habilitar a coexistência).
                     </div>
                   </li>
-                  <li style="display:flex; gap:10px; align-items:flex-start; font-size:13.5px; line-height:1.5; color:#b0bac8;">
+                  <li
+                    style="display:flex; gap:10px; align-items:flex-start; font-size:13.5px; line-height:1.5; color:#b0bac8;">
                     <span style="color:var(--teal); font-weight:bold; font-size:14px;">•</span>
                     <div>
-                      <strong style="color:#fff;">Grupos de Conversa:</strong> As mensagens enviadas ou recebidas em grupos não sincronizam entre o aplicativo e a API.
+                      <strong style="color:#fff;">Grupos de Conversa:</strong> As mensagens enviadas ou recebidas em
+                      grupos não sincronizam entre o aplicativo e a API.
                     </div>
                   </li>
-                  <li style="display:flex; gap:10px; align-items:flex-start; font-size:13.5px; line-height:1.5; color:#b0bac8;">
+                  <li
+                    style="display:flex; gap:10px; align-items:flex-start; font-size:13.5px; line-height:1.5; color:#b0bac8;">
                     <span style="color:var(--teal); font-weight:bold; font-size:14px;">•</span>
                     <div>
-                      <strong style="color:#fff;">Custos e Mensageria:</strong> As mensagens enviadas pelo app celular são gratuitas. Pela API, são cobradas por sessão de 24h de acordo com a categoria do template utilizado.
+                      <strong style="color:#fff;">Custos e Mensageria:</strong> As mensagens enviadas pelo app celular
+                      são gratuitas. Pela API, são cobradas por sessão de 24h de acordo com a categoria do template
+                      utilizado.
                     </div>
                   </li>
-                  <li style="display:flex; gap:10px; align-items:flex-start; font-size:13.5px; line-height:1.5; color:#b0bac8;">
+                  <li
+                    style="display:flex; gap:10px; align-items:flex-start; font-size:13.5px; line-height:1.5; color:#b0bac8;">
                     <span style="color:var(--teal); font-weight:bold; font-size:14px;">•</span>
                     <div>
-                      <strong style="color:#fff;">Elegibilidade do Número:</strong> O número precisa ter um histórico de uso ativo no WhatsApp para ser considerado qualificado pela Meta.
+                      <strong style="color:#fff;">Elegibilidade do Número:</strong> O número precisa ter um histórico de
+                      uso ativo no WhatsApp para ser considerado qualificado pela Meta.
                     </div>
                   </li>
                 </ul>
@@ -5147,8 +5203,10 @@
           </div>
 
           <!-- Bottom notification -->
-          <div style="margin-top:35px; text-align:center; font-size:13px; font-weight:700; color:var(--teal); display:inline-flex; align-items:center; gap:10px; background:rgba(0,212,182,0.06); padding:8px 24px; border-radius:30px; border:1px solid rgba(0,212,182,0.15); letter-spacing:0.5px;">
-            <span class="api-status-dot-pulse" style="position:relative; display:inline-block; margin:0; background:var(--teal); box-shadow:0 0 0 0 rgba(0, 212, 182, 0.4); width:8px; height:8px; border-radius:50%;"></span>
+          <div
+            style="margin-top:35px; text-align:center; font-size:13px; font-weight:700; color:var(--teal); display:inline-flex; align-items:center; gap:10px; background:rgba(0,212,182,0.06); padding:8px 24px; border-radius:30px; border:1px solid rgba(0,212,182,0.15); letter-spacing:0.5px;">
+            <span class="api-status-dot-pulse"
+              style="position:relative; display:inline-block; margin:0; background:var(--teal); box-shadow:0 0 0 0 rgba(0, 212, 182, 0.4); width:8px; height:8px; border-radius:50%;"></span>
             <span>Em breve — acompanhe as novas atualizações da Mavra</span>
           </div>
 
@@ -5170,68 +5228,79 @@
           </h2>
 
           <p class="future-subtitle" style="text-align:center; font-size: 14px; margin-bottom: 24px;">
-            Muito além de uma ferramenta, entregamos suporte estratégico e operacional completo para assegurar que a Fluir extraia o máximo da IA.
+            Muito além de uma ferramenta, entregamos suporte estratégico e operacional completo para assegurar que a
+            Fluir extraia o máximo da IA.
           </p>
 
           <div class="services-grid">
             <div class="service-card">
               <span class="service-icon">🔗</span>
               <h4 class="service-title">Integração e Fluxos de IA</h4>
-              <p class="service-desc">Criação completa de toda a estrutura dos agentes de IA, engenharia de prompts e integrações diretas com o sistema EVO.</p>
+              <p class="service-desc">Criação completa de toda a estrutura dos agentes de IA, engenharia de prompts e
+                integrações diretas com o sistema EVO.</p>
             </div>
 
             <div class="service-card">
               <span class="service-icon">🔍</span>
               <h4 class="service-title">Acompanhamento Contínuo</h4>
-              <p class="service-desc">Monitoramento ativo das conversas diárias (exatamente como nos 60 dias de teste) para identificar e aplicar melhorias.</p>
+              <p class="service-desc">Monitoramento ativo das conversas diárias (exatamente como nos 60 dias de teste)
+                para identificar e aplicar melhorias.</p>
             </div>
 
             <div class="service-card">
               <span class="service-icon">✍️</span>
               <h4 class="service-title">Ajustes Dinâmicos de Prompts</h4>
-              <p class="service-desc">Evolução constante do tom de voz do agente, além de atualizações rápidas de tabelas de preços, novos serviços ou regras da rede.</p>
+              <p class="service-desc">Evolução constante do tom de voz do agente, além de atualizações rápidas de
+                tabelas de preços, novos serviços ou regras da rede.</p>
             </div>
 
             <div class="service-card">
               <span class="service-icon">🚀</span>
               <h4 class="service-title">Auditoria de Automações</h4>
-              <p class="service-desc">Análise rigorosa do desempenho das réguas de disparos em massa, medindo taxas de resposta e engajamento.</p>
+              <p class="service-desc">Análise rigorosa do desempenho das réguas de disparos em massa, medindo taxas de
+                resposta e engajamento.</p>
             </div>
 
             <div class="service-card">
               <span class="service-icon">📈</span>
               <h4 class="service-title">Métricas de Conversão</h4>
-              <p class="service-desc">Análise profunda focada em resultados práticos, acompanhando de perto o agendamento de aulas experimentais e o comparecimento.</p>
+              <p class="service-desc">Análise profunda focada em resultados práticos, acompanhando de perto o
+                agendamento de aulas experimentais e o comparecimento.</p>
             </div>
 
             <div class="service-card">
               <span class="service-icon">📋</span>
               <h4 class="service-title">Relatório de Performance</h4>
-              <p class="service-desc">Entrega mensal de relatórios detalhados contendo o volume de atendimentos da IA, disparos realizados e eficiência da operação.</p>
+              <p class="service-desc">Entrega mensal de relatórios detalhados contendo o volume de atendimentos da IA,
+                disparos realizados e eficiência da operação.</p>
             </div>
 
             <div class="service-card">
               <span class="service-icon">👥</span>
               <h4 class="service-title">Alinhamento com Unidades</h4>
-              <p class="service-desc">Sessões de acompanhamento com cada unidade para sanar dúvidas operacionais sobre transferências e agendamentos da IA.</p>
+              <p class="service-desc">Sessões de acompanhamento com cada unidade para sanar dúvidas operacionais sobre
+                transferências e agendamentos da IA.</p>
             </div>
 
             <div class="service-card">
               <span class="service-icon">🎓</span>
               <h4 class="service-title">Treinamento Mensal Dedicado</h4>
-              <p class="service-desc">Capacitação constante das equipes, incluindo 1 hora de chamada mensal dedicada para treinamento com cada unidade.</p>
+              <p class="service-desc">Capacitação constante das equipes, incluindo 1 hora de chamada mensal dedicada
+                para treinamento com cada unidade.</p>
             </div>
 
             <div class="service-card">
               <span class="service-icon">🛡️</span>
               <h4 class="service-title">Saúde da API Oficial</h4>
-              <p class="service-desc">Aplicação rigorosa das diretrizes da Meta e controle de comportamento para manter a conta saudável e livre de bloqueios ou banimentos.</p>
+              <p class="service-desc">Aplicação rigorosa das diretrizes da Meta e controle de comportamento para manter
+                a conta saudável e livre de bloqueios ou banimentos.</p>
             </div>
 
             <div class="service-card">
               <span class="service-icon">🔮</span>
               <h4 class="service-title">Antecipação Tecnológica</h4>
-              <p class="service-desc">Análise proativa do roadmap da Meta para adaptar os sistemas a mudanças estruturais (como o BSUID) sem impactos na operação.</p>
+              <p class="service-desc">Análise proativa do roadmap da Meta para adaptar os sistemas a mudanças
+                estruturais (como o BSUID) sem impactos na operação.</p>
             </div>
           </div>
 
@@ -5317,42 +5386,55 @@
             Investimento decrescente à medida que a operação ganha maturidade e autonomia.
           </p>
 
-          <div style="display:grid; grid-template-columns:540px 1fr; gap:40px; width:100%; max-width:1300px; align-items:start;">
+          <div
+            style="display:grid; grid-template-columns:540px 1fr; gap:40px; width:100%; max-width:1300px; align-items:start;">
 
             <!-- Left Column: Tabela e Setup Alert (Balanced) -->
             <div style="display:flex; flex-direction:column; gap:20px;">
-              
+
               <!-- Tabela de Preços Card -->
-              <div style="background:linear-gradient(135deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:24px; box-shadow:0 20px 40px rgba(0,0,0,0.3); display:flex; flex-direction:column; gap:16px;">
-                
-                <div style="font-size:11px; font-weight:700; text-transform:uppercase; color:var(--teal); letter-spacing:1px; margin-bottom:4px;">
+              <div
+                style="background:linear-gradient(135deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:24px; box-shadow:0 20px 40px rgba(0,0,0,0.3); display:flex; flex-direction:column; gap:16px;">
+
+                <div
+                  style="font-size:11px; font-weight:700; text-transform:uppercase; color:var(--teal); letter-spacing:1px; margin-bottom:4px;">
                   Valores Mensais por Unidade Contratada
                 </div>
 
-                <div style="display:flex; flex-direction:column; gap:0; border-radius:12px; overflow:hidden; border:1px solid rgba(255,255,255,0.08);">
+                <div
+                  style="display:flex; flex-direction:column; gap:0; border-radius:12px; overflow:hidden; border:1px solid rgba(255,255,255,0.08);">
                   <!-- Header -->
-                  <div style="display:grid; grid-template-columns:1fr 1.2fr 1.2fr; background:rgba(255,255,255,0.04); padding:14px 18px; border-bottom:1px solid rgba(255,255,255,0.08); align-items:center;">
-                    <span style="font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:0.5px; color:var(--steel);">Período</span>
-                    <span style="font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:0.5px; color:var(--steel); text-align:center;">Plano Basic</span>
-                    <span style="font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:0.5px; color:var(--teal); text-align:center;">Plano Pro</span>
+                  <div
+                    style="display:grid; grid-template-columns:1fr 1.2fr 1.2fr; background:rgba(255,255,255,0.04); padding:14px 18px; border-bottom:1px solid rgba(255,255,255,0.08); align-items:center;">
+                    <span
+                      style="font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:0.5px; color:var(--steel);">Período</span>
+                    <span
+                      style="font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:0.5px; color:var(--steel); text-align:center;">Plano
+                      Basic</span>
+                    <span
+                      style="font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:0.5px; color:var(--teal); text-align:center;">Plano
+                      Pro</span>
                   </div>
 
                   <!-- Ano 1 mensal -->
-                  <div style="display:grid; grid-template-columns:1fr 1.2fr 1.2fr; padding:16px 18px; border-bottom:1px solid rgba(255,255,255,0.06); background:rgba(255,255,255,0.01); align-items:center;">
+                  <div
+                    style="display:grid; grid-template-columns:1fr 1.2fr 1.2fr; padding:16px 18px; border-bottom:1px solid rgba(255,255,255,0.06); background:rgba(255,255,255,0.01); align-items:center;">
                     <span style="font-size:13px; color:#fff; font-weight:700;">Ano 1</span>
                     <span style="font-size:16px; color:#fff; font-weight:800; text-align:center;">R$ 850</span>
                     <span style="font-size:16px; color:var(--teal); font-weight:800; text-align:center;">R$ 1.000</span>
                   </div>
-                  
+
                   <!-- Ano 2 mensal -->
-                  <div style="display:grid; grid-template-columns:1fr 1.2fr 1.2fr; padding:16px 18px; border-bottom:1px solid rgba(255,255,255,0.06); background:rgba(0,212,182,0.02); align-items:center;">
+                  <div
+                    style="display:grid; grid-template-columns:1fr 1.2fr 1.2fr; padding:16px 18px; border-bottom:1px solid rgba(255,255,255,0.06); background:rgba(0,212,182,0.02); align-items:center;">
                     <span style="font-size:13px; color:#fff; font-weight:700;">Ano 2</span>
                     <span style="font-size:16px; color:var(--teal); font-weight:800; text-align:center;">R$ 550</span>
                     <span style="font-size:16px; color:var(--teal); font-weight:800; text-align:center;">R$ 700</span>
                   </div>
-                  
+                  <!-- Teste de envio de tarefa para a equipe -->
                   <!-- Ano 3 mensal -->
-                  <div style="display:grid; grid-template-columns:1fr 1.2fr 1.2fr; padding:16px 18px; background:rgba(94,162,255,0.02); align-items:center;">
+                  <div
+                    style="display:grid; grid-template-columns:1fr 1.2fr 1.2fr; padding:16px 18px; background:rgba(94,162,255,0.02); align-items:center;">
                     <span style="font-size:13px; color:#fff; font-weight:700;">Ano 3</span>
                     <span style="font-size:16px; color:#5ea2ff; font-weight:800; text-align:center;">R$ 450</span>
                     <span style="font-size:16px; color:#5ea2ff; font-weight:800; text-align:center;">R$ 600</span>
@@ -5361,71 +5443,89 @@
               </div>
 
               <!-- Setup Note (Balanced on Left Column) -->
-              <div style="background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.06); border-radius:16px; padding:16px 20px; font-size:12px; color:#9aa5b4; line-height:1.6; display:flex; gap:12px; align-items:start; box-shadow:0 10px 20px rgba(0,0,0,0.15);">
+              <div
+                style="background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.06); border-radius:16px; padding:16px 20px; font-size:12px; color:#9aa5b4; line-height:1.6; display:flex; gap:12px; align-items:start; box-shadow:0 10px 20px rgba(0,0,0,0.15);">
                 <div style="font-size:16px; margin-top:2px;">⚠️</div>
                 <div>
-                  <strong style="color:#fff; display:block; margin-bottom:2px;">Taxa de Setup Inicial:</strong> 
-                  R$ 2.500 por unidade contratada (etapa única e não recorrente). Não incide em nenhuma das renovações contratuais nos anos seguintes.
+                  <strong style="color:#fff; display:block; margin-bottom:2px;">Taxa de Setup Inicial:</strong>
+                  R$ 2.500 por unidade contratada (etapa única e não recorrente). Não incide em nenhuma das renovações
+                  contratuais nos anos seguintes.
                 </div>
               </div>
             </div>
 
             <!-- Right Column: O que justifica a redução -->
-            <div style="background:linear-gradient(135deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:28px; box-shadow:0 20px 40px rgba(0,0,0,0.3); display:flex; flex-direction:column; gap:20px;">
-              
-              <div style="font-size:11px; font-weight:700; text-transform:uppercase; color:var(--teal); letter-spacing:1px; margin-bottom:4px;">
+            <div
+              style="background:linear-gradient(135deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:28px; box-shadow:0 20px 40px rgba(0,0,0,0.3); display:flex; flex-direction:column; gap:20px;">
+
+              <div
+                style="font-size:11px; font-weight:700; text-transform:uppercase; color:var(--teal); letter-spacing:1px; margin-bottom:4px;">
                 O que viabiliza a redução do investimento?
               </div>
 
               <div style="display:flex; flex-direction:column; gap:20px;">
-                
+
                 <!-- Argumento 1 -->
                 <div style="display:flex; gap:16px; align-items:start;">
-                  <div style="width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:18px;">
+                  <div
+                    style="width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:18px;">
                     🎓
                   </div>
                   <div style="font-size:13.5px; line-height:1.55; color:#a0aec0;">
-                    <strong style="color:#fff; font-weight:700;">Equipe bem Capacitada:</strong> Com o time comercial treinado e independente, a necessidade de chamadas de treinamento e suporte operacional cai drasticamente.
+                    <strong style="color:#fff; font-weight:700;">Equipe bem Capacitada:</strong> Com o time comercial
+                    treinado e independente, a necessidade de chamadas de treinamento e suporte operacional cai
+                    drasticamente.
                   </div>
                 </div>
 
                 <!-- Argumento 2 -->
                 <div style="display:flex; gap:16px; align-items:start;">
-                  <div style="width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:18px;">
+                  <div
+                    style="width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:18px;">
                     ⚙️
                   </div>
                   <div style="font-size:13.5px; line-height:1.55; color:#a0aec0;">
-                    <strong style="color:#fff; font-weight:700;">Engenharia de Prompts Estabilizada:</strong> Os fluxos da IA e os prompts já estarão bem alinhados e ajustados à realidade da academia, necessitando apenas de manutenção básica.
+                    <strong style="color:#fff; font-weight:700;">Engenharia de Prompts Estabilizada:</strong> Os fluxos
+                    da IA e os prompts já estarão bem alinhados e ajustados à realidade da academia, necessitando apenas
+                    de manutenção básica.
                   </div>
                 </div>
 
                 <!-- Argumento 3 -->
                 <div style="display:flex; gap:16px; align-items:start;">
-                  <div style="width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:18px;">
+                  <div
+                    style="width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:18px;">
                     🧹
                   </div>
                   <div style="font-size:13.5px; line-height:1.55; color:#a0aec0;">
-                    <strong style="color:#fff; font-weight:700;">Banco de Dados Saneado (Evita Duplicidade):</strong> Base de dados limpa, eliminando riscos de disparos duplicados que prejudicam a qualidade da API Oficial da Meta.
+                    <strong style="color:#fff; font-weight:700;">Banco de Dados Saneado (Evita Duplicidade):</strong>
+                    Base de dados limpa, eliminando riscos de disparos duplicados que prejudicam a qualidade da API
+                    Oficial da Meta.
                   </div>
                 </div>
 
                 <!-- Argumento 4 -->
                 <div style="display:flex; gap:16px; align-items:start;">
-                  <div style="width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:18px;">
+                  <div
+                    style="width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:18px;">
                     🔗
                   </div>
                   <div style="font-size:13.5px; line-height:1.55; color:#a0aec0;">
-                    <strong style="color:#fff; font-weight:700;">Arquitetura BSUID Consolidada:</strong> Muitos cadastros de clientes já estarão atrelados aos novos IDs do WhatsApp, permitindo a transição automática entre número e ID sem falhas.
+                    <strong style="color:#fff; font-weight:700;">Arquitetura BSUID Consolidada:</strong> Muitos
+                    cadastros de clientes já estarão atrelados aos novos IDs do WhatsApp, permitindo a transição
+                    automática entre número e ID sem falhas.
                   </div>
                 </div>
 
                 <!-- Argumento 5 -->
                 <div style="display:flex; gap:16px; align-items:start;">
-                  <div style="width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:18px;">
+                  <div
+                    style="width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:18px;">
                     🔍
                   </div>
                   <div style="font-size:13.5px; line-height:1.55; color:#a0aec0;">
-                    <strong style="color:#fff; font-weight:700;">Monitoramento Otimizado:</strong> Nosso acompanhamento passa a ser proativo e preventivo, focado em melhorias pontuais em vez de correções de bugs.
+                    <strong style="color:#fff; font-weight:700;">Monitoramento Otimizado:</strong> Nosso acompanhamento
+                    passa a ser proativo e preventivo, focado em melhorias pontuais em vez de correções de bugs.
                   </div>
                 </div>
 
@@ -5913,10 +6013,10 @@
       if (Math.abs(dx) > 50) go(dx > 0 ? cur + 1 : cur - 1);
     }, { passive: true });
   </script>
-<!-- Lightbox overlay -->
-<div class="bsuid-lightbox" id="bsuid-lightbox" onclick="closeBsuidLightbox()">
-  <img id="bsuid-lightbox-img" src="" alt="BSUID Expanded" />
-</div>
+  <!-- Lightbox overlay -->
+  <div class="bsuid-lightbox" id="bsuid-lightbox" onclick="closeBsuidLightbox()">
+    <img id="bsuid-lightbox-img" src="" alt="BSUID Expanded" />
+  </div>
 </body>
 
 </html>
